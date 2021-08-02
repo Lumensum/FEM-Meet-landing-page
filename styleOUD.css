@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,900&display=swap");
+
+:root {
+  --clr-darkgreen: hsl(192, 37%, 48%);
+  --clr-darkgreen-opacity: hsla(192, 37%, 48%, 0.9);
+  --clr-darkgreen-hover: hsl(192, 54%, 64%);
+  --clr-purple: hsl(268, 34%, 53%);
+  --clr-purple-hover: hsl(268, 55%, 71%);
+  --clr-verydarkblue: hsl(240, 21%, 20%);
+  --clr-gray: hsl(240, 10%, 57%);
+  --clr-lightblue: hsl(192, 90%, 77%);
+  --clr-pink: hsl(268, 100%, 86%);
+  --clr-white: hsl(0, 0%, 98%);
+
+  --media-mobile: 400px;
+  --media-tablet: 700px;
+  --media-desktop: 1100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--clr-verydarkblue);
+}
+
+h1,
+h2,
+.overline {
+  font-weight: 900;
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.overline {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--clr-darkgreen);
+}
+
+p {
+  font-weight: 500;
+  color: var(--clr-gray);
+  line-height: 26px;
+  text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.button {
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  padding: 15px 0px;
+  display: inline-block;
+  cursor: pointer;
+
+  color: var(--clr-white);
+
+  margin-bottom: 16px;
+}
+
+.button__version {
+  opacity: 0.6;
+}
+
+.button--green {
+  background-color: var(--clr-darkgreen);
+}
+
+.button--green:hover {
+  background-color: var(--clr-darkgreen-hover);
+}
+
+.button--purple {
+  background-color: var(--clr-purple);
+}
+
+.button--purple:hover {
+  background-color: var(--clr-purple-hover);
+}
+
+/* ----------- ALIGNMENT ---------- */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 48px;
+}
+
+.groupchat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 56px;
+}
+
+.header__images {
+  margin-bottom: 48px;
+}
+
+.header__title {
+  margin-bottom: 24px;
+}
+
+p {
+  margin: 0 24px 32px 24px;
+}
+
+.overline {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 32px;
+}
+
+/* ---------- SPECIAL ---------- */
+.numbering {
+  color: var(--clr-gray);
+  font-size: 16px;
+  font-weight: 900;
+  border: 1px solid hsla(240, 10%, 57%, 25%);
+  border-radius: 29px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  padding: 14px;
+  margin: 64px auto;
+  background-color: #ffffff;
+}
+
+.numbering__text {
+  margin: -84px auto;
+}
+
+.numbering:before {
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: -98px;
+  left: 50%;
+  border: 1px solid hsla(240, 10%, 57%, 50%);
+  opacity: 0.25;
+  width: 1px;
+  height: 84px;
+}
+
+/* ---------- IMAGES ---------- */
+
+.header__images {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.header__image__left,
+.header__image__right {
+  min-width: 200px;
+  min-height: 153px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__image__left {
+  background-image: url(./assets/desktop/image-hero-left.png);
+}
+
+.header__image__right {
+  background-image: url(./assets/desktop/image-hero-right.png);
+}
+
+.main__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 64px 24px;
+  gap: 24px;
+}
+
+.main__images img {
+  width: 151px;
+  border-radius: 8px;
+}
+
+.experiencemoretogether {
+  background: linear-gradient(
+      var(--clr-darkgreen-opacity),
+      var(--clr-darkgreen-opacity)
+    ),
+    url(./assets/mobile/image-footer.jpg);
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -90px;
+  z-index: -1;
+}
+
+.experiencemoretogether h2 {
+  margin-top: 92px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.experiencemoretogether p {
+  color: inherit;
+}
+
+.experiencemoretogether a {
+  margin-bottom: 72px;
+}
