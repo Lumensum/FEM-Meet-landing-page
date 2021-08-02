@@ -329,10 +329,17 @@ footer h2 {
     flex-direction: column;
     text-align: center;
     max-width: 375px;
+    background-image: url("./assets/mobile/image-footer.jpg");
+    background: linear-gradient(
+        hsla(192, 37%, 48%, 90%),
+        hsla(192, 37%, 48%, 90%)
+      ),
+      url("./assets/mobile/image-footer.jpg") no-repeat top;
+    background-size: cover;
   }
 
   .footer__content {
-    width: 95%;
+    max-width: 100%;
     margin-bottom: 32px;
   }
 }
