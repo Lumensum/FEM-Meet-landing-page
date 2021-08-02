@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;900&display=swap");
+
+:root {
+  --clr-teal: hsl(192, 37%, 48%);
+  --clr-purple: hsl(268, 34%, 53%);
+  --clr-verydarkblue: hsl(240, 21%, 20%);
+  --clr-gray: hsl(240, 10%, 57%);
+  --clr-blue: hsl(192, 90%, 77%);
+  --clr-pink: hsl(268, 100%, 86%);
+  --clr-white: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: var(--clr-white);
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  margin: 80px auto 64px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+  margin: 24px auto;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--clr-teal, teal);
+}
+
+.button {
+  color: var(--clr-white);
+  display: inline-block;
+  border: none;
+  border-radius: 36px;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 16px 42px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 8px;
+  transition: opacity 0.25s ease;
+}
+
+.button span {
+  opacity: 0.5;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button--green {
+  background-color: var(--clr-teal);
+}
+
+.button--purple {
+  background-color: var(--clr-purple);
+}
+
+.hero {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin-bottom: 214px;
+}
+
+.hero__image__right {
+  text-align: right;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+p {
+  color: var(--clr-gray);
+}
+
+.meetings {
+  margin: 92px auto 184px;
+  width: 1110px;
+  text-align: center;
+}
+
+.meetings__images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.meetings__image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.meetings__content {
+  width: 540px;
+  margin: auto;
+}
+
+footer {
+  background-image: url("./assets/desktop/image-footer.jpg");
+  background: linear-gradient(
+      hsla(192, 37%, 48%, 90%),
+      hsla(192, 37%, 48%, 90%)
+    ),
+    url("./assets/desktop/image-footer.jpg") no-repeat;
+
+  color: var(--clr-white);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  padding: 72px;
+}
+
+footer h2 {
+  width: 350px;
+}
+
+.footer__content {
+  width: 350px;
+}
+
+/* ---------- SPECIAL ---------- */
+.numbering {
+  color: var(--clr-gray);
+  font-size: 16px;
+  font-weight: 900;
+  border: 1px solid hsla(240, 10%, 57%, 25%);
+  border-radius: 29px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  position: relative;
+  padding: 14px;
+  margin: -32px auto;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.numbering__text {
+  margin: -84px auto;
+}
+
+.numbering:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -98px;
+  left: 50%;
+  border: 1px solid hsla(240, 10%, 57%, 50%);
+  opacity: 0.25;
+  width: 1px;
+  height: 84px;
+}
