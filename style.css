@@ -30,6 +30,7 @@ body {
   line-height: 1.625rem; /* 26px */
   font-weight: 400;
   background-color: var(--clr-white);
+  color: var(--clr-verydarkblue);
 }
 
 .container {
