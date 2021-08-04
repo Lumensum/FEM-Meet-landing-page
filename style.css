@@ -51,7 +51,7 @@ header img {
 
 h1,
 h2,
-h3 {
+.overline {
   font-weight: 900;
 }
 
@@ -64,9 +64,11 @@ h1 {
 h2 {
   font-size: 2.5rem; /* 40px */
   line-height: 2.75rem; /* 44px */
+  max-width: 15ch;
+  margin: auto;
 }
 
-h3 {
+.overline {
   font-size: 1rem; /* 16px */
   letter-spacing: 0.25rem; /* 4px */
   text-transform: uppercase;
